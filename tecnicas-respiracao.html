@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Técnicas de Respiração · Cura Interior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #d4a84b;
+      --gold-light: #f0d78c;
+      --bg-deep: #0f0a05;
+      --bg-warm: #1a120b;
+      --text: #f5e6c8;
+      --text-soft: #c9b896;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-warm) 60%, #120c08 100%);
+      color: var(--text);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      line-height: 1.65;
+    }
+    .top-bar {
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(212,168,75,0.2);
+    }
+    .back {
+      color: var(--gold-light);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+    .back:hover { opacity: 1; }
+
+    .page-header {
+      text-align: center;
+      padding: 2.5rem 1.5rem 1.5rem;
+    }
+    .page-header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.6rem, 5vw, 2.3rem);
+      letter-spacing: 0.12em;
+      color: var(--gold-light);
+      margin-bottom: 0.6rem;
+    }
+    .page-header p {
+      color: var(--text-soft);
+      font-size: 1.15rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 1.4rem auto;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+    .content h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin: 2rem 0 0.7rem;
+    }
+    .content p {
+      color: var(--text-soft);
+      font-size: 1.12rem;
+      margin-bottom: 0.9rem;
+    }
+    .content ul {
+      margin: 0.8rem 0 1.4rem 1.3rem;
+      color: var(--text-soft);
+      font-size: 1.08rem;
+    }
+    .content li { margin-bottom: 0.45rem; }
+
+    .video-section {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(212,168,75,0.2);
+    }
+    .video-section h2 {
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+    .video-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .yt-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.95rem 1.2rem;
+      background: linear-gradient(145deg, rgba(40, 28, 12, 0.9), rgba(25, 18, 8, 0.95));
+      border: 1px solid rgba(212, 168, 75, 0.4);
+      border-radius: 12px;
+      color: var(--gold-light);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      transition: all 0.3s ease;
+    }
+    .yt-btn:hover {
+      border-color: var(--gold);
+      background: linear-gradient(145deg, rgba(55, 38, 15, 0.95), rgba(35, 25, 10, 1));
+      box-shadow: 0 0 24px rgba(212, 168, 75, 0.2);
+      transform: translateY(-2px);
+    }
+    .yt-btn svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      fill: #ff0000;
+    }
+    .yt-btn span {
+      flex: 1;
+      text-align: left;
+    }
+    .yt-btn small {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      letter-spacing: 0.03em;
+      margin-top: 0.15rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="index.html" class="back">← Voltar</a>
+  </div>
+
+  <header class="page-header">
+    <h1>Técnicas de Respiração</h1>
+    <p>A respiração consciente é a ponte entre o corpo e a mente. Com práticas simples você pode reduzir o estresse, aumentar a energia e recuperar o equilíbrio.</p>
+    <div class="divider"></div>
+  </header>
+
+  <main class="content">
+    <h2>Respiração 4-7-8</h2>
+    <p>Ideal para acalmar o sistema nervoso e preparar o corpo para o descanso.</p>
+    <ul>
+      <li>Inspire pelo nariz contando até 4</li>
+      <li>Segure a respiração contando até 7</li>
+      <li>Expire pela boca contando até 8</li>
+      <li>Repita 4 ciclos</li>
+    </ul>
+
+    <h2>Respiração Diafragmática</h2>
+    <p>Coloque uma mão no peito e outra no abdômen. Inspire profundamente expandindo o abdômen e expire lentamente. Pratique por 5 a 10 minutos.</p>
+
+    <h2>Respiração Quadrada (Box Breathing)</h2>
+    <ul>
+      <li>Inspire 4 segundos</li>
+      <li>Segure 4 segundos</li>
+      <li>Expire 4 segundos</li>
+      <li>Segure 4 segundos</li>
+    </ul>
+    <p>Excelente para foco e controle emocional.</p>
+
+    <section class="video-section">
+      <h2>Vídeos de Exemplo</h2>
+      <div class="video-buttons">
+        <a class="yt-btn" href="https://www.youtube.com/results?search_query=t%C3%A9cnicas+de+respira%C3%A7%C3%A3o+medita%C3%A7%C3%A3o" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+          <span>
+            Respiração 4-7-8 Guiada
+            <small>Prática completa · YouTube</small>
+          </span>
+        </a>
+        <a class="yt-btn" href="https://www.youtube.com/results?search_query=box+breathing+respira%C3%A7%C3%A3o+quadrada" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+          <span>
+            Respiração Quadrada
+            <small>Box Breathing · YouTube</small>
+          </span>
+        </a>
+        <a class="yt-btn" href="https://www.youtube.com/results?search_query=respira%C3%A7%C3%A3o+diafragm%C3%A1tica+guiada" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+          <span>
+            Respiração Diafragmática
+            <small>Exercício guiado · YouTube</small>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
